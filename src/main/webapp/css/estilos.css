@@ -1,0 +1,63 @@
+@charset "UTF-8";
+
+html, body {
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    background-color: #F5F5F5;
+    height: 100%;
+    margin: 0;
+    display: flex;
+    flex-direction: column;
+}
+
+body {
+    min-height: 100vh;
+    justify-content: center; /* Centro el contenido verticalmente */
+    align-items: center;     /* Centro el contenido horizontalmente */
+}
+
+form {
+	padding: 2%;
+}
+
+div > a {
+    margin-top: 20px;
+    display: flex;                /* Uso un flexbox para alinear los enlaces */
+    flex-direction: column;       /* Pongo los enlaces uno debajo del otro */
+    gap: 20px;
+}
+
+/* Estilos comunes para los enlaces */
+a {
+    justify-content: center;
+    padding: 10px 20px;
+    text-align: center;
+    text-decoration: none;
+    color: #1565C0;
+    font-size: 15px;
+    font-weight: bold;
+    border: 2px solid #03DAC6;
+    border-radius: 8px;
+    max-width: 340px;            /* Aseguro una anchura máxima para las cajas */
+}
+
+/* Estilo propio para el enlace "Volver a atrás" */
+.volver {
+    padding: 10px 20px;
+    max-width: 100px;
+	margin-top: 25px;
+}
+
+a:hover {
+    background-color: #1565C0;
+    color: white;
+    border: 2px solid #F5F5F5;
+}
+
+footer {
+    margin-top: auto;
+    background-color: #1A237E;
+    color: white;
+    padding: 12px;
+    width: 100%;
+    text-align: center;
+}
